@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Client::TEXT-IN::TEXT-OUT::SHA224::C-SALT::UINT32_T: Исходный файл cmd.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Client::TEXT-IN::TEXT-OUT::SHA224::C-SALT::UINT32_T
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">cmd.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;stdexcept&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;error.h&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">using namespace </span>std;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="classCMDParser.html">   14</a></span><span class="keyword">class </span><a class="code hl_class" href="classCMDParser.html">CMDParser</a> {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keywordtype">string</span> in = <span class="stringliteral">&quot;./in.txt&quot;</span>; </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordtype">string</span> out = <span class="stringliteral">&quot;./out.txt&quot;</span>; </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordtype">string</span> cfg = <span class="stringliteral">&quot;./cfg.txt&quot;</span>; </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordtype">string</span> addr = <span class="stringliteral">&quot;127.0.0.1&quot;</span>; </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    uint16_t port = 33333; </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="classCMDParser.html#acd0673bc83c090d7567f8fbc192fcd07">   26</a></span>    <a class="code hl_function" href="classCMDParser.html#acd0673bc83c090d7567f8fbc192fcd07">CMDParser</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordtype">string</span> <a class="code hl_function" href="classCMDParser.html#a14f694bd4c682ae1d2318040ebeb9287">getIn</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keywordtype">string</span> <a class="code hl_function" href="classCMDParser.html#a4c0d6ac0411e48009e206d4ec033acaa">getOut</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordtype">string</span> <a class="code hl_function" href="classCMDParser.html#a55f44d6f91377ab6748d41944c9b551f">getCfg</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keywordtype">string</span> <a class="code hl_function" href="classCMDParser.html#ae954121c50602fdf363d78e662c21958">getAddr</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    uint16_t <a class="code hl_function" href="classCMDParser.html#a39fa2ee8b0c0c8b6eea69662dc30274e">getPort</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classCMDParser.html#ad4fc66ace516e0778b358ef8308c88ec">parse</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span>* argv[]);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classCMDParser.html#aac8f3660a9d1ffee1edd563c75b43811">showHelp</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>};</div>
+<div class="ttc" id="aclassCMDParser_html"><div class="ttname"><a href="classCMDParser.html">CMDParser</a></div><div class="ttdoc">Класс для анализа командной строки и получения значений аргументов.</div><div class="ttdef"><b>Definition:</b> cmd.h:14</div></div>
+<div class="ttc" id="aclassCMDParser_html_a14f694bd4c682ae1d2318040ebeb9287"><div class="ttname"><a href="classCMDParser.html#a14f694bd4c682ae1d2318040ebeb9287">CMDParser::getIn</a></div><div class="ttdeci">string getIn() const</div><div class="ttdoc">Получить путь к входному файлу.</div><div class="ttdef"><b>Definition:</b> cmd.cpp:4</div></div>
+<div class="ttc" id="aclassCMDParser_html_a39fa2ee8b0c0c8b6eea69662dc30274e"><div class="ttname"><a href="classCMDParser.html#a39fa2ee8b0c0c8b6eea69662dc30274e">CMDParser::getPort</a></div><div class="ttdeci">uint16_t getPort() const</div><div class="ttdoc">Получить порт сервера.</div><div class="ttdef"><b>Definition:</b> cmd.cpp:20</div></div>
+<div class="ttc" id="aclassCMDParser_html_a4c0d6ac0411e48009e206d4ec033acaa"><div class="ttname"><a href="classCMDParser.html#a4c0d6ac0411e48009e206d4ec033acaa">CMDParser::getOut</a></div><div class="ttdeci">string getOut() const</div><div class="ttdoc">Получить путь к выходному файлу.</div><div class="ttdef"><b>Definition:</b> cmd.cpp:8</div></div>
+<div class="ttc" id="aclassCMDParser_html_a55f44d6f91377ab6748d41944c9b551f"><div class="ttname"><a href="classCMDParser.html#a55f44d6f91377ab6748d41944c9b551f">CMDParser::getCfg</a></div><div class="ttdeci">string getCfg() const</div><div class="ttdoc">Получить путь к файлу конфигурации.</div><div class="ttdef"><b>Definition:</b> cmd.cpp:12</div></div>
+<div class="ttc" id="aclassCMDParser_html_aac8f3660a9d1ffee1edd563c75b43811"><div class="ttname"><a href="classCMDParser.html#aac8f3660a9d1ffee1edd563c75b43811">CMDParser::showHelp</a></div><div class="ttdeci">void showHelp() const</div><div class="ttdoc">Показать сообщение о помощи.</div><div class="ttdef"><b>Definition:</b> cmd.cpp:46</div></div>
+<div class="ttc" id="aclassCMDParser_html_acd0673bc83c090d7567f8fbc192fcd07"><div class="ttname"><a href="classCMDParser.html#acd0673bc83c090d7567f8fbc192fcd07">CMDParser::CMDParser</a></div><div class="ttdeci">CMDParser()=default</div><div class="ttdoc">Конструктор по умолчанию.</div></div>
+<div class="ttc" id="aclassCMDParser_html_ad4fc66ace516e0778b358ef8308c88ec"><div class="ttname"><a href="classCMDParser.html#ad4fc66ace516e0778b358ef8308c88ec">CMDParser::parse</a></div><div class="ttdeci">void parse(int argc, char *argv[])</div><div class="ttdoc">Разобрать аргументы командной строки и задать соответствующие значения.</div><div class="ttdef"><b>Definition:</b> cmd.cpp:24</div></div>
+<div class="ttc" id="aclassCMDParser_html_ae954121c50602fdf363d78e662c21958"><div class="ttname"><a href="classCMDParser.html#ae954121c50602fdf363d78e662c21958">CMDParser::getAddr</a></div><div class="ttdeci">string getAddr() const</div><div class="ttdoc">Получить адрес сервера.</div><div class="ttdef"><b>Definition:</b> cmd.cpp:16</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

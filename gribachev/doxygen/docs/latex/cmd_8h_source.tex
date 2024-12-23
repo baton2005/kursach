@@ -1,0 +1,39 @@
+\hypertarget{cmd_8h_source}{}\doxysection{cmd.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <stdexcept>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}error.h"{}}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{14 \textcolor{keyword}{class }\mbox{\hyperlink{classCMDParser}{CMDParser}} \{}
+\DoxyCodeLine{15 \textcolor{keyword}{private}:}
+\DoxyCodeLine{16     \textcolor{keywordtype}{string} in = \textcolor{stringliteral}{"{}./in.txt"{}}; }
+\DoxyCodeLine{17     \textcolor{keywordtype}{string} out = \textcolor{stringliteral}{"{}./out.txt"{}}; }
+\DoxyCodeLine{18     \textcolor{keywordtype}{string} cfg = \textcolor{stringliteral}{"{}./cfg.txt"{}}; }
+\DoxyCodeLine{19     \textcolor{keywordtype}{string} addr = \textcolor{stringliteral}{"{}127.0.0.1"{}}; }
+\DoxyCodeLine{20     uint16\_t port = 33333; }
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22 \textcolor{keyword}{public}:}
+\DoxyCodeLine{26     \mbox{\hyperlink{classCMDParser_acd0673bc83c090d7567f8fbc192fcd07}{CMDParser}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{32     \textcolor{keywordtype}{string} \mbox{\hyperlink{classCMDParser_a14f694bd4c682ae1d2318040ebeb9287}{getIn}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{38     \textcolor{keywordtype}{string} \mbox{\hyperlink{classCMDParser_a4c0d6ac0411e48009e206d4ec033acaa}{getOut}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{44     \textcolor{keywordtype}{string} \mbox{\hyperlink{classCMDParser_a55f44d6f91377ab6748d41944c9b551f}{getCfg}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{50     \textcolor{keywordtype}{string} \mbox{\hyperlink{classCMDParser_ae954121c50602fdf363d78e662c21958}{getAddr}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{56     uint16\_t \mbox{\hyperlink{classCMDParser_a39fa2ee8b0c0c8b6eea69662dc30274e}{getPort}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{64     \textcolor{keywordtype}{void} \mbox{\hyperlink{classCMDParser_ad4fc66ace516e0778b358ef8308c88ec}{parse}}(\textcolor{keywordtype}{int} argc, \textcolor{keywordtype}{char}* argv[]);}
+\DoxyCodeLine{65 }
+\DoxyCodeLine{69     \textcolor{keywordtype}{void} \mbox{\hyperlink{classCMDParser_aac8f3660a9d1ffee1edd563c75b43811}{showHelp}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{70 \};}
+
+\end{DoxyCode}

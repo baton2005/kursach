@@ -1,0 +1,31 @@
+\hypertarget{error_8h_source}{}\doxysection{error.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <exception>}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{12 \textcolor{keyword}{class }\mbox{\hyperlink{classVClientError}{VClientError}} : \textcolor{keyword}{public} exception}
+\DoxyCodeLine{13 \{}
+\DoxyCodeLine{14 \textcolor{keyword}{public}:}
+\DoxyCodeLine{21     \mbox{\hyperlink{classVClientError_ac2697f8446bcbd5a3c1026eff536f0fb}{VClientError}}(\textcolor{keyword}{const} \textcolor{keywordtype}{string} \&errorName, \textcolor{keyword}{const} \textcolor{keywordtype}{string} \&errorMsg, \textcolor{keyword}{const} \textcolor{keywordtype}{string} \&funcName);}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{27     \textcolor{keyword}{const} \textcolor{keywordtype}{char} *\mbox{\hyperlink{classVClientError_afd89a585fd051dcfd9e9f4dac30627b0}{what}}() \textcolor{keyword}{const} \textcolor{keyword}{noexcept} \textcolor{keyword}{override};}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{33     \textcolor{keywordtype}{string} \mbox{\hyperlink{classVClientError_a5916e8b260f2c8364e8a60ff3622c92a}{getErrorName}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{39     \textcolor{keywordtype}{string} \mbox{\hyperlink{classVClientError_a6073785ff90447a34295fdcc62a93b3d}{getErrorMsg}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{45     \textcolor{keywordtype}{string} \mbox{\hyperlink{classVClientError_af5e70d15d17336aa53d3bb10fd9f3e2b}{getFuncName}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47 \textcolor{keyword}{private}:}
+\DoxyCodeLine{48     \textcolor{keywordtype}{string} errorName;       }
+\DoxyCodeLine{49     \textcolor{keywordtype}{string} errorMsg;        }
+\DoxyCodeLine{50     \textcolor{keywordtype}{string} funcName;        }
+\DoxyCodeLine{51     \textcolor{keyword}{mutable} \textcolor{keywordtype}{string} fullMsg; }
+\DoxyCodeLine{52 \};}
+
+\end{DoxyCode}

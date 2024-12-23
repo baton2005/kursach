@@ -1,0 +1,131 @@
+\hypertarget{classCMDParser}{}\doxysection{Класс CMDParser}
+\label{classCMDParser}\index{CMDParser@{CMDParser}}
+
+
+Класс для анализа командной строки и получения значений аргументов.  
+
+
+
+
+{\ttfamily \#include $<$cmd.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCMDParser_acd0673bc83c090d7567f8fbc192fcd07}\label{classCMDParser_acd0673bc83c090d7567f8fbc192fcd07}} 
+{\bfseries CMDParser} ()=default
+\begin{DoxyCompactList}\small\item\em Конструктор по умолчанию. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classCMDParser_a14f694bd4c682ae1d2318040ebeb9287}{get\+In}} () const
+\begin{DoxyCompactList}\small\item\em Получить путь к входному файлу. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classCMDParser_a4c0d6ac0411e48009e206d4ec033acaa}{get\+Out}} () const
+\begin{DoxyCompactList}\small\item\em Получить путь к выходному файлу. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classCMDParser_a55f44d6f91377ab6748d41944c9b551f}{get\+Cfg}} () const
+\begin{DoxyCompactList}\small\item\em Получить путь к файлу конфигурации. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classCMDParser_ae954121c50602fdf363d78e662c21958}{get\+Addr}} () const
+\begin{DoxyCompactList}\small\item\em Получить адрес сервера. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{classCMDParser_a39fa2ee8b0c0c8b6eea69662dc30274e}{get\+Port}} () const
+\begin{DoxyCompactList}\small\item\em Получить порт сервера. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCMDParser_ad4fc66ace516e0778b358ef8308c88ec}{parse}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Разобрать аргументы командной строки и задать соответствующие значения. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCMDParser_aac8f3660a9d1ffee1edd563c75b43811}\label{classCMDParser_aac8f3660a9d1ffee1edd563c75b43811}} 
+void {\bfseries show\+Help} () const
+\begin{DoxyCompactList}\small\item\em Показать сообщение о помощи. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для анализа командной строки и получения значений аргументов. 
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classCMDParser_ae954121c50602fdf363d78e662c21958}\label{classCMDParser_ae954121c50602fdf363d78e662c21958}} 
+\index{CMDParser@{CMDParser}!getAddr@{getAddr}}
+\index{getAddr@{getAddr}!CMDParser@{CMDParser}}
+\doxysubsubsection{\texorpdfstring{getAddr()}{getAddr()}}
+{\footnotesize\ttfamily string CMDParser\+::get\+Addr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Получить адрес сервера. 
+
+\begin{DoxyReturn}{Возвращает}
+Адрес сервера. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCMDParser_a55f44d6f91377ab6748d41944c9b551f}\label{classCMDParser_a55f44d6f91377ab6748d41944c9b551f}} 
+\index{CMDParser@{CMDParser}!getCfg@{getCfg}}
+\index{getCfg@{getCfg}!CMDParser@{CMDParser}}
+\doxysubsubsection{\texorpdfstring{getCfg()}{getCfg()}}
+{\footnotesize\ttfamily string CMDParser\+::get\+Cfg (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Получить путь к файлу конфигурации. 
+
+\begin{DoxyReturn}{Возвращает}
+Путь к файлу конфигурации. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCMDParser_a14f694bd4c682ae1d2318040ebeb9287}\label{classCMDParser_a14f694bd4c682ae1d2318040ebeb9287}} 
+\index{CMDParser@{CMDParser}!getIn@{getIn}}
+\index{getIn@{getIn}!CMDParser@{CMDParser}}
+\doxysubsubsection{\texorpdfstring{getIn()}{getIn()}}
+{\footnotesize\ttfamily string CMDParser\+::get\+In (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Получить путь к входному файлу. 
+
+\begin{DoxyReturn}{Возвращает}
+Путь к входному файлу. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCMDParser_a4c0d6ac0411e48009e206d4ec033acaa}\label{classCMDParser_a4c0d6ac0411e48009e206d4ec033acaa}} 
+\index{CMDParser@{CMDParser}!getOut@{getOut}}
+\index{getOut@{getOut}!CMDParser@{CMDParser}}
+\doxysubsubsection{\texorpdfstring{getOut()}{getOut()}}
+{\footnotesize\ttfamily string CMDParser\+::get\+Out (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Получить путь к выходному файлу. 
+
+\begin{DoxyReturn}{Возвращает}
+Путь к выходному файлу. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCMDParser_a39fa2ee8b0c0c8b6eea69662dc30274e}\label{classCMDParser_a39fa2ee8b0c0c8b6eea69662dc30274e}} 
+\index{CMDParser@{CMDParser}!getPort@{getPort}}
+\index{getPort@{getPort}!CMDParser@{CMDParser}}
+\doxysubsubsection{\texorpdfstring{getPort()}{getPort()}}
+{\footnotesize\ttfamily uint16\+\_\+t CMDParser\+::get\+Port (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Получить порт сервера. 
+
+\begin{DoxyReturn}{Возвращает}
+Порт сервера. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCMDParser_ad4fc66ace516e0778b358ef8308c88ec}\label{classCMDParser_ad4fc66ace516e0778b358ef8308c88ec}} 
+\index{CMDParser@{CMDParser}!parse@{parse}}
+\index{parse@{parse}!CMDParser@{CMDParser}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily void CMDParser\+::parse (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Разобрать аргументы командной строки и задать соответствующие значения. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em argc} & Количество аргументов. \\
+\hline
+{\em argv} & Массив аргументов. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classVClientError}{VClient\+Error}}} & В случае неверного аргумента. \\
+\hline
+\end{DoxyExceptions}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+cmd.\+h\item 
+cmd.\+cpp\end{DoxyCompactItemize}

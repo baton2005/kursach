@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Client::TEXT-IN::TEXT-OUT::SHA224::C-SALT::UINT32_T: Исходный файл error.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Client::TEXT-IN::TEXT-OUT::SHA224::C-SALT::UINT32_T
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">error.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;exception&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">using namespace </span>std;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="classVClientError.html">   12</a></span><span class="keyword">class </span><a class="code hl_class" href="classVClientError.html">VClientError</a> : <span class="keyword">public</span> exception</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>{</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <a class="code hl_function" href="classVClientError.html#ac2697f8446bcbd5a3c1026eff536f0fb">VClientError</a>(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;errorName, <span class="keyword">const</span> <span class="keywordtype">string</span> &amp;errorMsg, <span class="keyword">const</span> <span class="keywordtype">string</span> &amp;funcName);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_function" href="classVClientError.html#afd89a585fd051dcfd9e9f4dac30627b0">what</a>() <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordtype">string</span> <a class="code hl_function" href="classVClientError.html#a5916e8b260f2c8364e8a60ff3622c92a">getErrorName</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keywordtype">string</span> <a class="code hl_function" href="classVClientError.html#a6073785ff90447a34295fdcc62a93b3d">getErrorMsg</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordtype">string</span> <a class="code hl_function" href="classVClientError.html#af5e70d15d17336aa53d3bb10fd9f3e2b">getFuncName</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordtype">string</span> errorName;       </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordtype">string</span> errorMsg;        </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keywordtype">string</span> funcName;        </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keyword">mutable</span> <span class="keywordtype">string</span> fullMsg; </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>};</div>
+<div class="ttc" id="aclassVClientError_html"><div class="ttname"><a href="classVClientError.html">VClientError</a></div><div class="ttdoc">Класс для обработки ошибок клиента.</div><div class="ttdef"><b>Definition:</b> error.h:13</div></div>
+<div class="ttc" id="aclassVClientError_html_a5916e8b260f2c8364e8a60ff3622c92a"><div class="ttname"><a href="classVClientError.html#a5916e8b260f2c8364e8a60ff3622c92a">VClientError::getErrorName</a></div><div class="ttdeci">string getErrorName() const</div><div class="ttdoc">Получить имя ошибки.</div><div class="ttdef"><b>Definition:</b> error.cpp:17</div></div>
+<div class="ttc" id="aclassVClientError_html_a6073785ff90447a34295fdcc62a93b3d"><div class="ttname"><a href="classVClientError.html#a6073785ff90447a34295fdcc62a93b3d">VClientError::getErrorMsg</a></div><div class="ttdeci">string getErrorMsg() const</div><div class="ttdoc">Получить сообщение об ошибке.</div><div class="ttdef"><b>Definition:</b> error.cpp:22</div></div>
+<div class="ttc" id="aclassVClientError_html_ac2697f8446bcbd5a3c1026eff536f0fb"><div class="ttname"><a href="classVClientError.html#ac2697f8446bcbd5a3c1026eff536f0fb">VClientError::VClientError</a></div><div class="ttdeci">VClientError(const string &amp;errorName, const string &amp;errorMsg, const string &amp;funcName)</div><div class="ttdoc">Конструктор класса VClientError.</div><div class="ttdef"><b>Definition:</b> error.cpp:4</div></div>
+<div class="ttc" id="aclassVClientError_html_af5e70d15d17336aa53d3bb10fd9f3e2b"><div class="ttname"><a href="classVClientError.html#af5e70d15d17336aa53d3bb10fd9f3e2b">VClientError::getFuncName</a></div><div class="ttdeci">string getFuncName() const</div><div class="ttdoc">Получить имя функции, в которой произошла ошибка.</div><div class="ttdef"><b>Definition:</b> error.cpp:27</div></div>
+<div class="ttc" id="aclassVClientError_html_afd89a585fd051dcfd9e9f4dac30627b0"><div class="ttname"><a href="classVClientError.html#afd89a585fd051dcfd9e9f4dac30627b0">VClientError::what</a></div><div class="ttdeci">const char * what() const noexcept override</div><div class="ttdoc">Получить полное сообщение об ошибке.</div><div class="ttdef"><b>Definition:</b> error.cpp:11</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

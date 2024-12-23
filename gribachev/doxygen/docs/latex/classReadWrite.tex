@@ -1,0 +1,142 @@
+\hypertarget{classReadWrite}{}\doxysection{Класс Read\+Write}
+\label{classReadWrite}\index{ReadWrite@{ReadWrite}}
+
+
+Класс для работы с файлами ввода, вывода и конфигурации.  
+
+
+
+
+{\ttfamily \#include $<$rw.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classReadWrite_ac6745feac8ae46621e6dd9d52c39e8ea}{Read\+Write}} (string \&in\+Vec, string \&out\+Vec, string \&cfg)
+\begin{DoxyCompactList}\small\item\em Конструктор класса \mbox{\hyperlink{classReadWrite}{Read\+Write}}. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classReadWrite_a7ecc89ef9e39fd9ef9beb9f67b198a18}{get\+In}} ()
+\begin{DoxyCompactList}\small\item\em Получить путь к файлу входных данных. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classReadWrite_a65c771bca8b0d6f068747b73815e10db}{get\+Out}} ()
+\begin{DoxyCompactList}\small\item\em Получить путь к файлу выходных данных. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classReadWrite_add323197b33545068652a2f10a04e462}{get\+Cfg}} ()
+\begin{DoxyCompactList}\small\item\em Получить путь к файлу конфигурации. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classReadWrite_a308a0c8bd846f2d24d8c0bf930bb0411}{write\+Vec}} (const vector$<$ uint32\+\_\+t $>$ \&data)
+\begin{DoxyCompactList}\small\item\em Записать данные в файл выходных данных. \end{DoxyCompactList}\item 
+vector$<$ vector$<$ uint32\+\_\+t $>$ $>$ \mbox{\hyperlink{classReadWrite_a4a29fa438596405d31b87eb128475785}{read\+Vec}} ()
+\begin{DoxyCompactList}\small\item\em Считать векторы из файла входных данных. \end{DoxyCompactList}\item 
+array$<$ string, 2 $>$ \mbox{\hyperlink{classReadWrite_acb36facaa291e07df00d69095c4a7fff}{read\+Cfg}} ()
+\begin{DoxyCompactList}\small\item\em Считать конфигурационные данные из файла конфигурации. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для работы с файлами ввода, вывода и конфигурации. 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{classReadWrite_ac6745feac8ae46621e6dd9d52c39e8ea}\label{classReadWrite_ac6745feac8ae46621e6dd9d52c39e8ea}} 
+\index{ReadWrite@{ReadWrite}!ReadWrite@{ReadWrite}}
+\index{ReadWrite@{ReadWrite}!ReadWrite@{ReadWrite}}
+\doxysubsubsection{\texorpdfstring{ReadWrite()}{ReadWrite()}}
+{\footnotesize\ttfamily Read\+Write\+::\+Read\+Write (\begin{DoxyParamCaption}\item[{string \&}]{in\+Vec,  }\item[{string \&}]{out\+Vec,  }\item[{string \&}]{cfg }\end{DoxyParamCaption})}
+
+
+
+Конструктор класса \mbox{\hyperlink{classReadWrite}{Read\+Write}}. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em in\+Vec} & Путь к файлу входных данных. \\
+\hline
+{\em out\+Vec} & Путь к файлу выходных данных. \\
+\hline
+{\em cfg} & Путь к файлу конфигурации. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classReadWrite_add323197b33545068652a2f10a04e462}\label{classReadWrite_add323197b33545068652a2f10a04e462}} 
+\index{ReadWrite@{ReadWrite}!getCfg@{getCfg}}
+\index{getCfg@{getCfg}!ReadWrite@{ReadWrite}}
+\doxysubsubsection{\texorpdfstring{getCfg()}{getCfg()}}
+{\footnotesize\ttfamily string Read\+Write\+::get\+Cfg (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Получить путь к файлу конфигурации. 
+
+\begin{DoxyReturn}{Возвращает}
+Путь к файлу конфигурации. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classReadWrite_a7ecc89ef9e39fd9ef9beb9f67b198a18}\label{classReadWrite_a7ecc89ef9e39fd9ef9beb9f67b198a18}} 
+\index{ReadWrite@{ReadWrite}!getIn@{getIn}}
+\index{getIn@{getIn}!ReadWrite@{ReadWrite}}
+\doxysubsubsection{\texorpdfstring{getIn()}{getIn()}}
+{\footnotesize\ttfamily string Read\+Write\+::get\+In (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Получить путь к файлу входных данных. 
+
+\begin{DoxyReturn}{Возвращает}
+Путь к файлу входных данных. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classReadWrite_a65c771bca8b0d6f068747b73815e10db}\label{classReadWrite_a65c771bca8b0d6f068747b73815e10db}} 
+\index{ReadWrite@{ReadWrite}!getOut@{getOut}}
+\index{getOut@{getOut}!ReadWrite@{ReadWrite}}
+\doxysubsubsection{\texorpdfstring{getOut()}{getOut()}}
+{\footnotesize\ttfamily string Read\+Write\+::get\+Out (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Получить путь к файлу выходных данных. 
+
+\begin{DoxyReturn}{Возвращает}
+Путь к файлу выходных данных. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classReadWrite_acb36facaa291e07df00d69095c4a7fff}\label{classReadWrite_acb36facaa291e07df00d69095c4a7fff}} 
+\index{ReadWrite@{ReadWrite}!readCfg@{readCfg}}
+\index{readCfg@{readCfg}!ReadWrite@{ReadWrite}}
+\doxysubsubsection{\texorpdfstring{readCfg()}{readCfg()}}
+{\footnotesize\ttfamily array$<$ string, 2 $>$ Read\+Write\+::read\+Cfg (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Считать конфигурационные данные из файла конфигурации. 
+
+\begin{DoxyReturn}{Возвращает}
+Массив строк, содержащий конфигурационные данные. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classReadWrite_a4a29fa438596405d31b87eb128475785}\label{classReadWrite_a4a29fa438596405d31b87eb128475785}} 
+\index{ReadWrite@{ReadWrite}!readVec@{readVec}}
+\index{readVec@{readVec}!ReadWrite@{ReadWrite}}
+\doxysubsubsection{\texorpdfstring{readVec()}{readVec()}}
+{\footnotesize\ttfamily vector$<$ vector$<$ uint32\+\_\+t $>$ $>$ Read\+Write\+::read\+Vec (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Считать векторы из файла входных данных. 
+
+\begin{DoxyReturn}{Возвращает}
+Вектор векторов, считанных из файла. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classReadWrite_a308a0c8bd846f2d24d8c0bf930bb0411}\label{classReadWrite_a308a0c8bd846f2d24d8c0bf930bb0411}} 
+\index{ReadWrite@{ReadWrite}!writeVec@{writeVec}}
+\index{writeVec@{writeVec}!ReadWrite@{ReadWrite}}
+\doxysubsubsection{\texorpdfstring{writeVec()}{writeVec()}}
+{\footnotesize\ttfamily void Read\+Write\+::write\+Vec (\begin{DoxyParamCaption}\item[{const vector$<$ uint32\+\_\+t $>$ \&}]{data }\end{DoxyParamCaption})}
+
+
+
+Записать данные в файл выходных данных. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em data} & Вектор данных для записи. \\
+\hline
+\end{DoxyParams}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+rw.\+h\item 
+rw.\+cpp\end{DoxyCompactItemize}
